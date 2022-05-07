@@ -1,0 +1,107 @@
+{
+    "answers": {
+        "request001": {
+            "relevance": [
+                {
+                    "doc_id": 27,
+                    "rank": 1.0
+                },
+                {
+                    "doc_id": 124,
+                    "rank": 0.967
+                },
+                {
+                    "doc_id": 136,
+                    "rank": 0.934
+                },
+                {
+                    "doc_id": 183,
+                    "rank": 0.926
+                },
+                {
+                    "doc_id": 57,
+                    "rank": 0.836
+                }
+            ],
+            "result": "true"
+        },
+        "request002": {
+            "relevance": [
+                {
+                    "doc_id": 27,
+                    "rank": 1.0
+                },
+                {
+                    "doc_id": 184,
+                    "rank": 0.895
+                },
+                {
+                    "doc_id": 183,
+                    "rank": 0.874
+                },
+                {
+                    "doc_id": 136,
+                    "rank": 0.853
+                },
+                {
+                    "doc_id": 57,
+                    "rank": 0.853
+                }
+            ],
+            "result": "true"
+        },
+        "request003": {
+            "result": "false"
+        },
+        "request004": {
+            "relevance": [
+                {
+                    "doc_id": 165,
+                    "rank": 1.0
+                },
+                {
+                    "doc_id": 95,
+                    "rank": 0.994
+                },
+                {
+                    "doc_id": 118,
+                    "rank": 0.949
+                },
+                {
+                    "doc_id": 15,
+                    "rank": 0.931
+                },
+                {
+                    "doc_id": 103,
+                    "rank": 0.931
+                }
+            ],
+            "result": "true"
+        },
+        "request005": {
+            "relevance": [
+                {
+                    "doc_id": 97,
+                    "rank": 1.0
+                },
+                {
+                    "doc_id": 143,
+                    "rank": 0.954
+                },
+                {
+                    "doc_id": 105,
+                    "rank": 0.95
+                },
+                {
+                    "doc_id": 87,
+                    "rank": 0.942
+                },
+                {
+                    "doc_id": 65,
+                    "rank": 0.934
+                }
+            ],
+            "result": "true"
+        }
+    }
+}

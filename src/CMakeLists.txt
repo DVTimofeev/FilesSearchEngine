@@ -8,9 +8,10 @@ set(Sources
     InvertedIndex.cpp 
     SearchEngine.cpp
 )
-
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 add_executable(${this} ${Sources})
+
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(

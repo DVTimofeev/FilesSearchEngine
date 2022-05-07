@@ -58,7 +58,6 @@ int ConvertJSON::get_response_limit(){
     return response_limit;
 }
 
-//TODO the question is: What type of data funt recieves and how converts it in json to write a file
 void ConvertJSON::save_answers(std::vector<std::vector<std::pair<int, double>>> answers_vec){
     json j;
     std::stringstream ss;

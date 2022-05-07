@@ -16,6 +16,7 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 # gtest block end
 
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 set(MY_INCLUDE_DIR 
     ${CMAKE_SOURCE_DIR}/include
