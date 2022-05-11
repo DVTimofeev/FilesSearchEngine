@@ -1,6 +1,6 @@
 {
     "config": {
-        "max_responses": 10,
+        "max_responses": -51,
         "name": "SearchEngine",
         "version": "0.2"
     },

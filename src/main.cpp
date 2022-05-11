@@ -19,6 +19,7 @@ int main(){
     invertedIndex.update_freq_dict(file_paths);
 
     SearchEngine searchEngine(invertedIndex);
+    searchEngine.set_response_limit(convertJSON.get_response_limit());
     auto answers = searchEngine.search(requests);
 
     std::vector<std::vector<std::pair<int, double>>> result;

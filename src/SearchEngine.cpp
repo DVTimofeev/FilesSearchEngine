@@ -72,7 +72,7 @@ std::vector<RelativeIndex> SearchEngine::search(std::string query){
 }
 
 
-void SearchEngine::set_response_limit(size_t limit){
+void SearchEngine::set_response_limit(int limit){
     if (limit > 0) {
         _response_limit = limit;
     }
