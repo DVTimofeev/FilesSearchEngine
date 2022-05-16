@@ -14,7 +14,7 @@ struct RelativeIndex{
 class ISearchEngine
 {
 private:
-    std::unordered_map<std::string, std::vector<Entry>> _freq_dict;
+
 public:
     virtual ~ISearchEngine() = default;
     virtual std::vector<std::vector<RelativeIndex>> search(const std::vector<std::string>& queries_input) = 0;

@@ -15,8 +15,8 @@ public:
 
     virtual std::string get_error_msg() = 0;
 
-    virtual void open_config (std::string config_pash) = 0;
-    virtual void open_requests (std::string requests_pash) = 0;
+    virtual void open_config (std::string config_path) = 0;
+    virtual void open_requests (std::string requests_path) = 0;
 
     virtual bool is_config_open() = 0;
     virtual bool is_requests_open() = 0;

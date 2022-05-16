@@ -95,7 +95,7 @@ void ConvertJSON::open_config (std::string config_path){
         file >> _config;
         file.close();
     }catch(std::exception& re){
-        _error_msg = re.what();
+        _error_msg += re.what() + '\n';
     }
 }
 void ConvertJSON::open_requests (std::string requests_path){
@@ -109,7 +109,7 @@ void ConvertJSON::open_requests (std::string requests_path){
         file >> _requests;
         file.close();
     }catch(std::exception& re){
-        _error_msg = re.what();
+        _error_msg += re.what() + '\n';
     }
 }
 
