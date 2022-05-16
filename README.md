@@ -40,20 +40,20 @@ You need to add a single json.hpp to use it.
 
 #### [bshoshany/thread-pool](https://github.com/bshoshany/thread-pool)
 
-- Fast:  
+- **Fast**:  
     - Built from scratch with maximum performance in mind.
     - Suitable for use in high-performance computing nodes with a very large number of CPU cores.
     - Compact code, to reduce both compilation time and binary size.
     - Reusing threads avoids the overhead of creating and destroying them for individual tasks.
     - A task queue ensures that there are never more threads running in parallel than allowed by the hardware.
 
-- Lightweight:  
+- **Lightweight**:  
     - Only ~180 lines of code, excluding comments, blank lines, and the two optional helper classes.
     - Single header file: simply #include "thread_pool.hpp".
     - Header-only: no need to install or build the library.
     - Self-contained: no external requirements or dependencies. Does not require OpenMP or any other multithreading APIs. Only uses the C++ standard library, and works with any C++17-compliant compiler.
 
-- Easy to use:  
+- **Easy to use**:  
     - Very simple operation, using a handful of member functions.
     - Every task submitted to the queue automatically generates an std::future, which can be used to wait for the task to finish executing and/or obtain its eventual return value.
     - Optionally, tasks may also be submitted without generating a future, sacrificing convenience for greater performance.
