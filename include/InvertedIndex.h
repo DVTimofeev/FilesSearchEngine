@@ -1,5 +1,6 @@
 #pragma once
 #include "IInvertedIndex.h"
+#include "thread-pool-2.0.0/thread_pool.hpp"
 
 
 using FreqDict = std::unordered_map<std::string, std::vector<Entry>>;

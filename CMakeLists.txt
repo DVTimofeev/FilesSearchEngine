@@ -3,6 +3,8 @@ project(grad_work)
 
 set(CMAKE_CXX_STANDARD 17)
 
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
+
 # gtest block start
 include(FetchContent)
 FetchContent_Declare(
@@ -16,7 +18,6 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 # gtest block end
 
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 set(MY_INCLUDE_DIR
         ${CMAKE_SOURCE_DIR}/include

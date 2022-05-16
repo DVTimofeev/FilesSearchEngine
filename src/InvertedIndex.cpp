@@ -14,15 +14,12 @@ FreqDict InvertedIndex::get_freq_dict(){
 
 void InvertedIndex::update_freq_dict(const std::vector<std::string> &filepaths){
     std::vector<std::future<FreqDict>> ft_vec;
-    std::vector<std::thread> th_vec;
+    thread_pool pool;
     
     for (int i = 0; i < filepaths.size(); i++){
-        auto func = [this](std::string filepath, int doc_id){return get_file_wordmap(filepath, doc_id); };
-        std::packaged_task<FreqDict(std::string, int)> tsk(func);
-        ft_vec.push_back(tsk.get_future());
-        std::thread th(std::move(tsk), filepaths[i], i);
-        th_vec.push_back(std::move(th));
-
+        auto func = [this](const std::string& filepath, int doc_id){return get_file_wordmap(filepath, doc_id); };
+        auto ft = pool.submit(func, filepaths[i], i);
+        ft_vec.push_back(std::move(ft));
     }
 
     for (int i = 0; i < filepaths.size(); i++){
@@ -33,11 +30,7 @@ void InvertedIndex::update_freq_dict(const std::vector<std::string> &filepaths){
             auto vec = item.second;
             _freq_dict[key].insert(_freq_dict[key].end(), vec.begin(), vec.end());
         }
-        
-    }
 
-    for (int i = 0; i < filepaths.size(); i++){
-        th_vec[i].join();
     }
 }
 
