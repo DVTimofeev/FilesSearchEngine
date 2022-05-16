@@ -24,9 +24,6 @@ void InvertedIndex::update_freq_dict(const std::vector<std::string> &filepaths){
         th_vec.push_back(std::move(th));
 
     }
-    for (int i = 0; i < filepaths.size(); i++){
-        ft_vec[i].wait();    
-    }
 
     for (int i = 0; i < filepaths.size(); i++){
         auto ret = ft_vec[i].get();

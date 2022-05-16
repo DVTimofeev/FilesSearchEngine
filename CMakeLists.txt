@@ -18,8 +18,9 @@ enable_testing()
 
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-set(MY_INCLUDE_DIR 
-    ${CMAKE_SOURCE_DIR}/include
+set(MY_INCLUDE_DIR
+        ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_SOURCE_DIR}/3dparty
 )
 
 set(MY_SRC_DIR
